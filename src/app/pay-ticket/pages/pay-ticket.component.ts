@@ -30,9 +30,9 @@ export class PayTicketComponent implements OnInit {
 
   ngOnInit() {
     this.busService.getAll().subscribe(
-      (data: any) => {
-        this.buses = data;
-      }
+        (data: any) => {
+          this.buses = data;
+        }
     );
   }
 }

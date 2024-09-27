@@ -11,7 +11,7 @@ describe('PayTicketComponent', () => {
       imports: [PayTicketComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(PayTicketComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

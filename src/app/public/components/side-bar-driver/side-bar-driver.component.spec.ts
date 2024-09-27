@@ -8,10 +8,10 @@ describe('SideBarDriverComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SideBarDriverComponent]
+      declarations: [SideBarDriverComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(SideBarDriverComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

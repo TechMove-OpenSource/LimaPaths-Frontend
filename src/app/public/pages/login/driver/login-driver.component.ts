@@ -4,8 +4,8 @@ import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-driver',
-  templateUrl: './login-login-register-driver.component.html',
-  styleUrl: './login-login-register-driver.component.css'
+  templateUrl: './login-driver.component.html',
+  styleUrl: './login-driver.component.css'
 })
 export class LoginDriverComponent {
   loginForm: FormGroup = this.fb.group({

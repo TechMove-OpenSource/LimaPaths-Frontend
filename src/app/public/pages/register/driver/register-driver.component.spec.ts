@@ -10,8 +10,8 @@ describe('DriverComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [RegisterDriverComponent]
     })
-      .compileComponents();
-
+    .compileComponents();
+    
     fixture = TestBed.createComponent(RegisterDriverComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

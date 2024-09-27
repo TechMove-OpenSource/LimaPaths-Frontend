@@ -20,7 +20,7 @@ import { Router } from '@angular/router';
     MatButtonModule,
     MatIconModule,
     ReactiveFormsModule ],
-  templateUrl: './login-register-passenger.component.html',
+  templateUrl: './login-passenger.component.html',
   styleUrls: ['./login-passenger.component.scss']
 })
 export class LoginPassengerComponent {

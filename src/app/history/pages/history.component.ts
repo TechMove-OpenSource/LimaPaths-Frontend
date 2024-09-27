@@ -33,9 +33,9 @@ export class HistoryComponent {
 
   ngOnInit() {
     this.tripService.getAll().subscribe(
-      (data: any) => {
-        this.dataSource = data;
-      }
+        (data: any) => {
+          this.dataSource = data;
+        }
     );
   }
 }

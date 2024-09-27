@@ -18,10 +18,10 @@ export class SideBarDriverComponent {
 
   constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
     this.breakpointObserver.observe([Breakpoints.Handset])
-      .subscribe(result => {
-        this.isMobile = result.matches;
-        if (this.isMobile) this.isDrawerOpen=false;
-      });
+        .subscribe(result => {
+          this.isMobile = result.matches;
+          if (this.isMobile) this.isDrawerOpen=false;
+        });
   }
 
 

@@ -1,7 +1,7 @@
-import { HistoryEntity } from './history.entity';
+import { Trip } from './history.entity';
 
-describe('HistoryEntity', () => {
+describe('TripEntity', () => {
   it('should create an instance', () => {
-    expect(new HistoryEntity()).toBeTruthy();
+    expect(new Trip()).toBeTruthy();
   });
 });

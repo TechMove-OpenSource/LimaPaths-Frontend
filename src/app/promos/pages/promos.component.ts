@@ -25,9 +25,9 @@ export class PromosComponent implements OnInit{
   constructor(private promoService: PromoService) {}
   ngOnInit() {
     this.promoService.getAll().subscribe(
-      (data: any) => {
-        this.promos = data;
-      }
+        (data: any) => {
+          this.promos = data;
+        }
     )
   }
 

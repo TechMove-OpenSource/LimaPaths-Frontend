@@ -37,9 +37,9 @@ export class NotificationsComponent {
 
   ngOnInit(): void {
     this.notificationService.getAll().subscribe(
-      (data) =>{
-        this.notifications = data;
-      }
+        (data) =>{
+          this.notifications = data;
+        }
     );
   }
 

@@ -8,8 +8,7 @@ import {environment} from "../../../environments/environment";
 })
 export class BaseService <T>{
   basePath: string = `${environment.serverBasePath}`;
-  resourceEndpoint: string = '/resource';
-
+  resourceEndpoint: string = '/resources';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json'})
   }
@@ -29,25 +28,25 @@ export class BaseService <T>{
   // Create Resource
   create(item: any): Observable<T> {
     return this.http.post<T>(this.resourcePath(), JSON.stringify(item), this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError));
+        .pipe(retry(2), catchError(this.handleError));
   }
 
   // Delete Resource
   delete(id: any) {
     return this.http.delete(`${this.resourcePath()}/${id}`, this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError));
+        .pipe(retry(2), catchError(this.handleError));
   }
 
   // Update Resource
   update(id: any, item: any): Observable<T> {
     return this.http.put<T>(`${this.resourcePath()}/${id}`, JSON.stringify(item), this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError));
+        .pipe(retry(2), catchError(this.handleError));
   }
 
   // Get All Resources
   getAll(): Observable<T> {
     return this.http.get<T>(this.resourcePath(), this.httpOptions)
-      .pipe(retry(2), catchError(this.handleError));
+        .pipe(retry(2), catchError(this.handleError));
   }
 
   private resourcePath(): string {

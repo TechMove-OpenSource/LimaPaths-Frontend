@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {PayTicketService} from '../../pay-ticket/services/pay-ticket.service';
+import {PayTicketService} from '../../../pay-ticket/services/pay-ticket.service';
 
 @Component({
   selector: 'app-select-route',

@@ -1,7 +1,7 @@
-import { BusEntity } from './bus.entity';
+import { Bus } from './bus.entity';
 
 describe('BusEntity', () => {
   it('should create an instance', () => {
-    expect(new BusEntity()).toBeTruthy();
+    expect(new Bus()).toBeTruthy();
   });
 });

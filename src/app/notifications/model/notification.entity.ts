@@ -1,15 +1,16 @@
-import { Injectable } from '@angular/core';
-import { BaseService } from "../../shared/services/base.service";
-import { HttpClient } from "@angular/common/http";
-import {Trip} from "../model/history.entity";
+export class Notification {
+    id: number;
+    title: string;
+    subtitle: string;
+    description: string;
+    img_url: string;
 
-@Injectable({
-  providedIn: 'root'
-})
-export class HistoryService extends BaseService<Trip>{
+    constructor() {
+        this.id = 0;
+        this.title = "";
+        this.subtitle = "";
+        this.description = "";
+        this.img_url = "";
+    }
 
-  constructor(http: HttpClient) {
-    super(http);
-    this.resourceEndpoint = '/trips'
-  }
 }
