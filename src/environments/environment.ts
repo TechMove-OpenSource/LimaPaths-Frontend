@@ -1,3 +1,3 @@
 export const environment = {
-  serverBasePath: 'https://localhost:3000',
+  serverBasePath: 'https://my-json-server.typicode.com/TechMove-OpenSource/LimaPaths-FakeAPI',
 };
