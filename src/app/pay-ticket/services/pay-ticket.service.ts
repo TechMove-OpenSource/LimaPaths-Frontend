@@ -10,6 +10,6 @@ export class PayTicketService extends BaseService<Bus>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEndpoint = '/payment';
+    this.resourceEndpoint = '/payments';
   }
 }

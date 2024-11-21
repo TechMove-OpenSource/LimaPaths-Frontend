@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  serverBasePath: 'https://limapaths-backend-production.up.railway.app/',
+  serverBasePath: 'https://limapaths-backend-production.up.railway.app/api/v1',
 };
