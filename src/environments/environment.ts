@@ -1,3 +1,3 @@
 export const environment = {
-  serverBasePath: 'https://localhost:3000',
+  serverBasePath: 'https://limapaths-backend-production.up.railway.app/',
 };
